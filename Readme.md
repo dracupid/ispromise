@@ -12,7 +12,7 @@ Test whether an object is a promises/A+ object or constructor. More powerful the
 
 ## Installation
 ```bash
-npm i ispromise
+npm i ispromise -S
 ```
 
 ## Usage
