@@ -4,7 +4,6 @@ module.exports = function (obj) {
         && ((obj.constructor && obj.constructor.name === 'Promise') || typeof obj.then === 'function');
 };
 module.exports.isConstructor = function (obj) {
-    var ref;
     return !!obj
         && (typeof obj === 'function')
         && ((obj.name === 'Promise')

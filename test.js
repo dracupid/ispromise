@@ -26,7 +26,7 @@ tap.test('Is constructor', function (t){
         t.ok(isConstructor(lib.lib), lib.name);
         t.notOk(isPromise(lib.lib), lib.name);
     });
-    testValues.forEach(function (v) {t.notOk(isConstructor(v), v)});
+    testValues.forEach(function (v) {t.notOk(isConstructor(v), v);});
     t.end();
 });
 
@@ -35,6 +35,6 @@ tap.test('Is promise', function (t){
         t.ok(isPromise(lib.lib.resolve()), lib.name);
         t.notOk(isConstructor(lib.lib.resolve()), lib.name);
     });
-    testValues.forEach(function (v) {t.notOk(isPromise(v), v)});
+    testValues.forEach(function (v) {t.notOk(isPromise(v), v);});
     t.end();
 });
