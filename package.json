@@ -10,13 +10,13 @@
   "author": "dracupid <dracupid@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "bluebird": "^2.10.2",
+    "bluebird": "^3.0.1",
     "es6-promise": "^3.0.2",
     "promise": "^7.0.4",
     "q": "^1.4.1",
-    "tap": "^2.0.0",
-    "when": "^3.7.3",
-    "yaku": "^0.7.10"
+    "tap": "^2.2.0",
+    "when": "^3.7.4",
+    "yaku": "^0.11.4"
   },
   "files": [
     "index.js"
