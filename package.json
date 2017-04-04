@@ -1,6 +1,6 @@
 {
   "name": "ispromise",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Test whether an object is a promises/A+ object or constructor.",
   "main": "index.js",
   "scripts": {
