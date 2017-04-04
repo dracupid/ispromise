@@ -8,5 +8,5 @@ module.exports.isConstructor = function (obj) {
   return !!obj &&
     (typeof obj === 'function') &&
     ((obj.name === 'Promise') ||
-    (typeof obj.resolve === 'function') && (typeof obj.reject === 'function'))
+    ((typeof obj.resolve === 'function') && (typeof obj.reject === 'function')))
 }
