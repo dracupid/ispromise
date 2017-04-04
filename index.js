@@ -1,8 +1,9 @@
 module.exports = function (obj) {
   return !!obj &&
-    typeof obj === 'object' &&
+    (typeof obj === 'object' || typeof obj === 'function') &&
     ((obj.constructor && obj.constructor.name === 'Promise') || typeof obj.then === 'function')
 }
+
 module.exports.isConstructor = function (obj) {
   return !!obj &&
     (typeof obj === 'function') &&

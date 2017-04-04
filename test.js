@@ -36,5 +36,12 @@ tap.test('Is promise', function (t){
         t.notOk(isConstructor(lib.lib.resolve()), lib.name);
     });
     testValues.forEach(function (v) {t.notOk(isPromise(v), v);});
+
+    var promiseFun = function() {}
+    t.notOk(isPromise(promiseFun), 'function');
+
+    promiseFun.then = function() {}
+
+    t.ok(isPromise(promiseFun), 'function with then method');
     t.end();
 });
